@@ -1,0 +1,1 @@
+ALTER SEQUENCE cities_id_seq RESTART WITH 22;
