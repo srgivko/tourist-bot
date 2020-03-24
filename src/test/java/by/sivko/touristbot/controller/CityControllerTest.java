@@ -148,7 +148,7 @@ class CityControllerTest {
         verify(this.cityService, times(1)).delete(NOT_EXIST_CITY_ID);
     }
 
-    @DisplayName("Test change city with city name")
+    @DisplayName("Test change city")
     @Test
     void testChangeWithNameCity() throws Exception {
         CityDto cityDto = new CityDto(EXIST_CITY_ID, "test", "test");
@@ -158,7 +158,7 @@ class CityControllerTest {
                 .characterEncoding("UTF-8")
                 .content(objectMapper.writeValueAsString(cityDto)))
                 .andDo(print())
-                .andExpect(status().isBadRequest());
+                .andExpect(status().isOk());
 
         verify(this.cityService, times(1)).update(cityDto);
     }
