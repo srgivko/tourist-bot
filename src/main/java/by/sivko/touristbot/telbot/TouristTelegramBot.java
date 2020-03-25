@@ -1,4 +1,4 @@
-package by.sivko.touristbot.service.telbot;
+package by.sivko.touristbot.telbot;
 
 import by.sivko.touristbot.entity.City;
 import by.sivko.touristbot.entity.TouristUser;

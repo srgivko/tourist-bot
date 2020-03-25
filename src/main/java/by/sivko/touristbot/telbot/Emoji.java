@@ -1,4 +1,4 @@
-package by.sivko.touristbot.service.telbot;
+package by.sivko.touristbot.telbot;
 
 /**
  * @author Ruben Bermudez
